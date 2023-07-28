@@ -18,3 +18,46 @@
   background-color: #142952;
   color: white;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh; /* Set the sidebar height to full viewport height */
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: -200px; /* Initially hide the sidebar outside the viewport */
+  transition: left 0.3s ease-in-out; /* Apply smooth transition for left property */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.menu-item {
+  margin: 10px 0;
+}
+
+.sidebar.expanded {
+  left: 0; /* Slide the sidebar in by setting left to 0 */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
