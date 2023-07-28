@@ -1,47 +1,20 @@
-#all {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 70%;
-}
+/* This section for div */
 
-#all td, #all th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#all tr:nth-child(even){background-color:  #ffffff;}
-
-#all th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #142952;
-  color: white;
-}
-
-/* This function for side bar menu */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
+div.container {
   display: flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  min-height: 100vh; /* Set a minimum height to make sure the sidebar fills the entire viewport height */
 }
 
 .sidebar {
   width: 200px;
-  height: 100vh; /* Set the sidebar height to full viewport height */
   background-color: #333;
   color: #fff;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: fixed;
-  top: 0;
-  left: -200px; /* Initially hide the sidebar outside the viewport */
-  transition: left 0.3s ease-in-out; /* Apply smooth transition for left property */
 }
 
 .menu {
@@ -54,14 +27,37 @@ body {
   margin: 10px 0;
 }
 
-.sidebar.expanded {
-  left: 0; /* Slide the sidebar in by setting left to 0 */
-}
-
 .content {
-  flex: 1;
   padding: 20px;
 }
+
+/* This CSS for button only */
+.buttonside {
+  display: block;
+  width: 100%; /* Make the button fill the width of the sidebar */
+  padding: 15px 0;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #008ae6;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.buttonside:hover {
+  background-color: #001a4d;
+}
+
+.buttonside:active {
+  background-color: #003399;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 /* This CSS for button only */
 .button {
