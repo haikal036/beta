@@ -1,0 +1,154 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #0074D9;
+    color: #100101ee;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .section-title {
+    border-bottom: 2px solid #0074D9;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  
+  .info {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align children to the left side */
+    margin-bottom: 15px;
+  }
+  
+  .experience-item.right-date {
+    align-items: flex-end;
+    /* Align children to the right side */
+  }
+  
+  .experience-item h3 {
+    margin: 0;
+  }
+  
+  .experience-item .date {
+    font-size: 14px;
+  }
+  
+  .education-item {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .education-item h3 {
+    margin: 0;
+  }
+  
+  .education-item .date {
+    font-size: 14px;
+  }
+  
+  /* Navigation Bar Styles */
+  nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #080202;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styles */
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: black;
+    color: #fff;
+    background-color: #008ae6;
+    border: solid;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {
+    background-color: #001a4d;
+  }
+  
+  .button:active {
+    background-color: #003399;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  /* Additional Button Styles */
+  .button2 {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: black;
+    color: #fff;
+    background-color: #008ae6;
+    border: none;
+    border-radius: 9px;
+  }
+  
+  .button2:hover {
+    background-color: #008ae6;
+  }
+  
+  .button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+  
